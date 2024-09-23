@@ -140,7 +140,6 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     done = init_folder(args.output)
-    print(done)
     todo = []
     for file in os.listdir(args.folder):
         if not file.endswith((".mp4", ".avi", ".mov", ".mkv")):
